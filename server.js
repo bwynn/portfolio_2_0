@@ -30,7 +30,7 @@ const options = {
 mongoose.connect(process.env.MONGODB_URI || db.db);
 
 // set up mongoose connection for filestack
-const newConnnect = mongoose.connection;
+const newConnect = mongoose.connection;
 
 newConnect.on('error', console.error.bind(console, 'connection error:'));
 
@@ -53,4 +53,4 @@ app.listen(port);
 
 console.log("Server connected on port " + port);
 
-exports = module.exports = app; 
+exports = module.exports = app;
